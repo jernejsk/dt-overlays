@@ -1,0 +1,15 @@
+//SPDX-License-Identifier: GPL-2.0+ or MIT
+//Copyright (C) 2026-present Team LibreELEC (https://libreelec.tv)
+/dts-v1/;
+/plugin/;
+
+/*
+ * Ethernet on the expansion board. U-Boot selects between the AC200 and
+ * the AC300 EPHY based on the SID.
+ */
+
+/ {
+	compatible = "xunlong,orangepi-zero2w";
+};
+
+/include/ "sun50i-h616-ethernet-ac200.dtsi"

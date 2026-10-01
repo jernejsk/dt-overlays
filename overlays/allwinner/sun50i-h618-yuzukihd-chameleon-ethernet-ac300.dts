@@ -1,0 +1,10 @@
+//SPDX-License-Identifier: GPL-2.0+ or MIT
+//Copyright (C) 2026-present Team LibreELEC (https://libreelec.tv)
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "yuzukihd,chameleon";
+};
+
+/include/ "sun50i-h616-ethernet-ac300.dtsi"

@@ -1,0 +1,36 @@
+//SPDX-License-Identifier: GPL-2.0+ or MIT
+//Copyright (C) 2026-present Team LibreELEC (https://libreelec.tv)
+
+/*
+ * EMAC1 with the AC300 EPHY integrated in some H616 family SoCs. The board
+ * has to provide reg_dldo1 (3.3 V). Use the AC200 overlay instead if
+ * Ethernet doesn't come up.
+ */
+
+&{/aliases} {
+	ethernet0 = "/soc/ethernet@5030000";
+};
+
+&ac200_pwm_clk {
+	status = "okay";
+};
+
+&ac300_ephy_package {
+	vcc-supply = <&reg_dldo1>;
+	status = "okay";
+};
+
+&emac1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&rmii_pins>;
+	phy-mode = "rmii";
+	phy-handle = <&ac300_ephy>;
+	phy-supply = <&reg_dldo1>;
+	allwinner,rx-delay-ps = <3100>;
+	allwinner,tx-delay-ps = <700>;
+	status = "okay";
+};
+
+&pwm {
+	status = "okay";
+};

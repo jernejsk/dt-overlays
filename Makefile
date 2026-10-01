@@ -8,6 +8,12 @@ DTBOS := \
   overlays/allwinner/sun50i-a64-spdif.dtbo \
   overlays/allwinner/sun50i-h5-spdif.dtbo \
   overlays/allwinner/sun50i-h5-tve.dtbo \
+  overlays/allwinner/sun50i-h616-orangepi-zero2-expansion-board.dtbo \
+  overlays/allwinner/sun50i-h618-orangepi-zero2w-ethernet.dtbo \
+  overlays/allwinner/sun50i-h618-orangepi-zero2w-expansion-board.dtbo \
+  overlays/allwinner/sun50i-h618-orangepi-zero3-expansion-board.dtbo \
+  overlays/allwinner/sun50i-h618-yuzukihd-chameleon-ethernet-ac200.dtbo \
+  overlays/allwinner/sun50i-h618-yuzukihd-chameleon-ethernet-ac300.dtbo \
   overlays/allwinner/sun50i-h6-ir.dtbo \
   overlays/allwinner/sun50i-h6-spdif.dtbo \
   overlays/allwinner/sun8i-h2-plus-bpi-m2-zero-ethernet.dtbo \

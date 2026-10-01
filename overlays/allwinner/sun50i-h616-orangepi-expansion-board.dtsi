@@ -1,0 +1,28 @@
+//SPDX-License-Identifier: GPL-2.0+ or MIT
+//Copyright (C) 2026-present Team LibreELEC (https://libreelec.tv)
+
+/*
+ * Orange Pi expansion boards for the H616/H618 Zero boards carry an IR
+ * receiver on PH10 and two USB ports, which are wired to the USB2 and
+ * USB3 controllers.
+ */
+
+&ehci2 {
+	status = "okay";
+};
+
+&ehci3 {
+	status = "okay";
+};
+
+&ir {
+	status = "okay";
+};
+
+&ohci2 {
+	status = "okay";
+};
+
+&ohci3 {
+	status = "okay";
+};

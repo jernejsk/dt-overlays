@@ -1,0 +1,10 @@
+//SPDX-License-Identifier: GPL-2.0+ or MIT
+//Copyright (C) 2026-present Team LibreELEC (https://libreelec.tv)
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "xunlong,orangepi-zero2w";
+};
+
+/include/ "sun50i-h616-orangepi-expansion-board.dtsi"
